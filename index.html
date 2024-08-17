@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DSEG7Classic-Regular&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" class="display">
+            <div id="expression" class="expression"></div>
+            <div id="result" class="result">0</div>
+            <!-- Botão de histórico e modo científico no visor -->
+            <div class="top-buttons">
+                <button id="historyBtn" class="top-btn">Histórico</button>
+                <button id="modeBtn" class="top-btn">Científica</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <!-- Botões da calculadora padrão -->
+            <button class="btn operator" data-value="C">AC</button>
+            <button class="btn operator" data-value="+/-">±</button>
+            <button class="btn operator" data-value="%">%</button>
+            <button class="btn operator" data-value="/">÷</button>
+
+            <button class="btn number" data-value="7">7</button>
+            <button class="btn number" data-value="8">8</button>
+            <button class="btn number" data-value="9">9</button>
+            <button class="btn operator" data-value="*">×</button>
+
+            <button class="btn number" data-value="4">4</button>
+            <button class="btn number" data-value="5">5</button>
+            <button class="btn number" data-value="6">6</button>
+            <button class="btn operator" data-value="-">−</button>
+
+            <button class="btn number" data-value="1">1</button>
+            <button class="btn number" data-value="2">2</button>
+            <button class="btn number" data-value="3">3</button>
+            <button class="btn operator" data-value="+">+</button>
+
+            <button class="btn number" data-value="0" style="grid-column: span 2;">0</button>
+            <button class="btn number" data-value=".">.</button>
+            <button class="btn operator" data-value="=">=</button>
+            <!-- Botões científicos -->
+            <div class="scientific-buttons">
+                <button class="btn" data-value="sin">sin</button>
+                <button class="btn" data-value="cos">cos</button>
+                <button class="btn" data-value="tan">tan</button>
+                <button class="btn" data-value="log">log</button>
+                <button class="btn" data-value="exp">exp</button>
+                <!-- Adicione mais botões conforme necessário -->
+            </div>
+        </div>
+        <div id="history" class="history">
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+    
+</body>
+</html>
